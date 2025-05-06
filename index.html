@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LeavyBean - The Lounge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">LeavyBean</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  
+
+<!-- Header Section -->
+<header id="home">
+  <h1>Welcome to LeavyBean Lounge</h1>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About LeavyBean Lounge</h2>
+    <p>At LeavyBean Lounge, we believe in creating cozy, welcoming spaces where coffee lovers, book readers, and friends come together. We offer artisanal coffee, delicious pastries, and a calm environment to relax, work, or connect. Our passion is serving you with love and flavor.</p>
+  </section>
+  
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form class="contact-form" action="#" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Location Section -->
+<section id="location">
+    <h2>Our Location</h2>
+    <p>Find us here and have a coffee with us!</p>
+    <div class="map-container">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.507866312966!2d76.02848768725578!3d22.954757801923154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963177f59bc7c69%3A0xd3a44fc89d070c06!2sLeavyBean%20The%20LOUNGE!5e0!3m2!1sen!2sin!4v1745850171264!5m2!1sen!2sin" width="1500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </iframe>
+
+    /<div class="location-button">
+  <a href="https://maps.google.com/?q=LeavyBean+Lounge" target="_blank" class="btn">📍 Get Directions</a>
+</div>
+
+  </section>
+  
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 LeavyBean Lounge. All rights reserved.</p>
+</footer>
+
+<script>
+// Navbar shrink effect on scroll
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('shrink');
+  } else {
+    navbar.classList.remove('shrink');
+  }
+});
+
+// Section fade-in on scroll
+const sections = document.querySelectorAll('section');
+window.addEventListener('scroll', () => {
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      section.classList.add('visible');
+    }
+  });
+});
+
+// Toggle menu for mobile
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
+   

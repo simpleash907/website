@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - Bean Lounge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Menu</h1>
+        <section>
+            <h2>Drinks</h2>
+            <ul>
+                <li>Espresso - $3</li>
+                <li>Cappuccino - $4</li>
+                <li>Latte - $4.5</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Snacks</h2>
+            <ul>
+                <li>Blueberry Muffin - $2.5</li>
+                <li>Chocolate Croissant - $3</li>
+                <li>Bagel with Cream Cheese - $2</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Bean Lounge</p>
+    </footer>
+</body>
+</html>
